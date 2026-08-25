@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jacqueline Mónaco — Arquitectura &amp; Diseño</title>
+<meta name="description" content="Portfolio de Jacqueline Mónaco — arquitectura, interiorismo, dirección técnica de obra y documentación técnica. Tucumán, Argentina.">
+<meta property="og:title" content="Jacqueline Mónaco — Arquitectura &amp; Diseño">
+<meta property="og:description" content="Portfolio de arquitectura, interiorismo y dirección de obra.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231c1a16'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='17' font-style='italic' fill='%23d4b896' text-anchor='middle'%3EJM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&amp;family=DM+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+[hidden]{display:none!important}
+:root{
+  --sand:#f5f0e8;--sand-d:#ede6d6;--paper:#faf8f4;
+  --ink:#1c1a16;--warm:#8b7355;--warm-s:#f0e8d8;
+  --warm-m:#d4b896;--warm-d:#6b5a3e;
+  --stone:#7a7060;--line:#ddd5c4;--line-s:#c8bfaf;
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --sans:'DM Sans',system-ui,sans-serif;--r:8px;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased}
+
+nav{position:sticky;top:0;z-index:100;background:rgba(250,248,244,.95);backdrop-filter:blur(12px);border-bottom:.5px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 3rem;height:58px}
+.nav-logo{font-family:var(--serif);font-size:20px;font-weight:400;color:var(--ink);text-decoration:none;font-style:italic}
+.nav-links{display:flex;align-items:center;gap:1.8rem}
+.nav-link{font-size:12px;color:var(--stone);text-decoration:none;letter-spacing:.08em;text-transform:uppercase;transition:color .15s}
+.nav-link:hover{color:var(--ink)}
+.nav-cta{font-size:12px;font-weight:500;color:var(--paper);background:var(--warm);padding:.45rem 1.2rem;border-radius:999px;text-decoration:none;transition:opacity .15s}
+.nav-cta:hover{opacity:.82}
+
+.hero{display:grid;grid-template-columns:1fr 1fr;min-height:90vh}
+.hero-left{position:relative;overflow:hidden;background:#1a1816}
+.hero-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;opacity:.88}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(28,26,22,.75) 0%,rgba(28,26,22,.15) 55%,transparent 100%)}
+.hero-left-bottom{position:absolute;bottom:0;left:0;right:0;padding:2.5rem;z-index:1}
+.hero-quote{font-family:var(--serif);font-size:22px;font-weight:300;font-style:italic;color:rgba(255,255,255,.9);line-height:1.4;margin-bottom:.6rem}
+.hero-loc{font-size:12px;color:rgba(255,255,255,.45);letter-spacing:.08em;text-transform:uppercase}
+.hero-right{background:var(--paper);display:flex;flex-direction:column;justify-content:center;padding:4rem 3.5rem}
+.hero-eyebrow{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--warm);margin-bottom:1.2rem;display:flex;align-items:center;gap:10px}
+.hero-eyebrow::before{content:'';display:block;width:24px;height:.5px;background:var(--warm)}
+.hero-name{font-family:var(--serif);font-size:clamp(42px,5vw,68px);font-weight:300;line-height:.96;letter-spacing:-.01em;color:var(--ink);margin-bottom:1.5rem}
+.hero-name em{font-style:italic;color:var(--warm);display:block}
+.hero-bio{font-size:14.5px;color:var(--stone);line-height:1.85;max-width:360px;margin-bottom:1.8rem}
+.hero-pills{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:2rem}
+.pill{font-size:11.5px;padding:4px 12px;border-radius:999px;background:var(--warm-s);color:var(--warm-d);border:.5px solid var(--warm-m);transition:all .15s;cursor:default}
+.pill:hover{background:var(--warm-m)}
+.hero-contact{display:flex;flex-direction:column;gap:.5rem}
+.hc{display:flex;align-items:center;gap:7px;font-size:13px;color:var(--stone);text-decoration:none;transition:color .15s}
+.hc:hover{color:var(--warm)}
+.hc svg{color:var(--warm-m);flex-shrink:0}
+
+.stats-bar{display:grid;grid-template-columns:repeat(4,1fr);background:var(--ink)}
+.sc{padding:1.3rem 1.6rem;border-right:1px solid #2a2820;text-align:center}
+.sc:last-child{border-right:none}
+.sc-n{font-family:var(--serif);font-size:30px;font-weight:300;color:var(--warm-m);line-height:1;margin-bottom:.2rem}
+.sc-l{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#555}
+
+.container{max-width:1060px;margin:0 auto;padding:3.5rem 2.5rem}
+.sec-hd{display:flex;align-items:baseline;gap:1rem;margin-bottom:2.5rem}
+.sec-num{font-family:var(--serif);font-size:11px;color:var(--line-s);letter-spacing:.08em}
+.sec-title{font-family:var(--serif);font-size:30px;font-weight:300;font-style:italic;color:var(--ink)}
+.sec-line{flex:1;height:.5px;background:var(--line)}
+.divider{height:.5px;background:var(--line)}
+
+.proj-list{display:flex;flex-direction:column;gap:1.2rem}
+.pcard{border:.5px solid var(--line);border-radius:var(--r);overflow:hidden;background:var(--paper);transition:border-color .2s}
+.pcard:hover{border-color:var(--warm-m)}
+.pcard-hd{display:grid;grid-template-columns:1fr auto;gap:1rem;padding:1.5rem 1.8rem;cursor:pointer;align-items:center;transition:background .15s}
+.pcard-hd:hover{background:var(--sand)}
+.pcard-year{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--warm);margin-bottom:.4rem}
+.pcard-name{font-family:var(--serif);font-size:clamp(18px,2.5vw,26px);font-weight:400;color:var(--ink);margin-bottom:.3rem}
+.pcard-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:.4rem}
+.ptag{font-size:11px;background:var(--sand-d);color:var(--warm-d);border:.5px solid var(--line);padding:2px 9px;border-radius:4px}
+.pcard-arrow{color:var(--warm-m);transition:transform .3s;flex-shrink:0}
+.pcard-arrow.open{transform:rotate(180deg)}
+.pcard-body{display:none}
+.pcard-body.open{display:block;animation:fadeIn .25s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+.pcard-desc{padding:1.2rem 1.8rem;border-top:.5px solid var(--line);background:var(--sand);display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.pdesc-label{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--warm);margin-bottom:.6rem}
+.pdesc-text{font-size:13.5px;color:var(--stone);line-height:1.8}
+.pdesc-list{list-style:none;display:flex;flex-direction:column;gap:.4rem}
+.pdesc-list li{font-size:13.5px;color:var(--stone);padding-left:1rem;position:relative;line-height:1.65}
+.pdesc-list li::before{content:'—';position:absolute;left:0;color:var(--warm-m);font-size:11px}
+.pcard-obras{padding:.8rem 1.8rem;border-top:.5px solid var(--line);background:var(--sand)}
+.obras-label{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--warm);margin-bottom:.5rem}
+.obras-list{display:flex;flex-wrap:wrap;gap:6px}
+.obra-tag{font-size:12px;background:var(--sand-d);color:var(--warm-d);border:.5px solid var(--line);padding:3px 10px;border-radius:4px}
+
+.pcard-gallery{padding:1.4rem 1.8rem 1.8rem;border-top:.5px solid var(--line)}
+.gal-label{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--stone);margin-bottom:1rem;display:flex;align-items:center;gap:8px}
+.gal-label::after{content:'';flex:1;height:.5px;background:var(--line)}
+.img-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.7rem}
+.img-thumb{border-radius:6px;overflow:hidden;border:.5px solid var(--line);cursor:zoom-in;transition:all .2s;aspect-ratio:4/3;background:var(--sand-d)}
+.img-thumb:hover{border-color:var(--warm);transform:translateY(-2px);box-shadow:0 6px 20px rgba(139,115,85,.15)}
+.img-thumb img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s}
+.img-thumb:hover img{transform:scale(1.04)}
+.pdf-btn{display:inline-flex;align-items:center;gap:.5rem;font-size:13px;color:var(--warm);background:var(--warm-s);border:.5px solid var(--warm-m);padding:.55rem 1.2rem;border-radius:6px;text-decoration:none;transition:all .15s}
+.pdf-btn:hover{background:var(--warm-m)}
+
+.skill-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:.8rem}
+.skill-card{background:var(--paper);border:.5px solid var(--line);border-radius:var(--r);padding:1.2rem;transition:all .2s;position:relative;overflow:hidden}
+.skill-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2.5px;background:var(--warm-m);transform:scaleX(0);transform-origin:left;transition:transform .25s}
+.skill-card:hover{border-color:var(--warm-m)}
+.skill-card:hover::before{transform:scaleX(1)}
+.skill-icon{font-size:20px;margin-bottom:.6rem}
+.skill-name{font-size:13.5px;font-weight:500;color:var(--ink);margin-bottom:.35rem}
+.skill-items{font-size:12.5px;color:var(--stone);line-height:1.9}
+
+.exp-list{display:flex;flex-direction:column}
+.exp-row{display:grid;grid-template-columns:175px 1fr;gap:2rem;padding:1.4rem 0;border-top:.5px solid var(--line)}
+.exp-row:last-child{border-bottom:.5px solid var(--line)}
+.exp-years{font-size:12px;color:var(--stone);margin-bottom:.2rem}
+.exp-co{font-size:13.5px;font-weight:600;color:var(--ink)}
+.exp-role{font-size:13.5px;font-weight:600;color:var(--ink);margin-bottom:.35rem}
+.exp-detail{font-size:13px;color:var(--stone);line-height:1.75}
+.exp-works{display:flex;flex-wrap:wrap;gap:5px;margin-top:.6rem}
+.exp-work{font-size:11.5px;background:var(--sand-d);color:var(--warm-d);padding:2px 9px;border-radius:4px;border:.5px solid var(--line)}
+
+.edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem}
+.edu-subtitle{font-size:11px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--stone);margin-bottom:1.5rem}
+.edu-item{padding-bottom:1.2rem;margin-bottom:1.2rem;border-bottom:.5px solid var(--line)}
+.edu-item:last-child{border-bottom:none;padding-bottom:0;margin-bottom:0}
+.edu-year{font-size:12px;color:var(--stone);margin-bottom:.2rem}
+.edu-name{font-size:14px;font-weight:600;color:var(--ink);margin-bottom:.2rem}
+.edu-degree{font-size:13px;color:var(--stone)}
+.cert-list{display:flex;flex-direction:column;gap:.85rem}
+.cert-item{display:flex;align-items:flex-start;gap:.7rem}
+.cert-dot{width:5px;height:5px;border-radius:50%;background:var(--warm-m);flex-shrink:0;margin-top:6px}
+.cert-name{font-size:13.5px;font-weight:500;color:var(--ink);line-height:1.4;margin-bottom:.1rem}
+.cert-issuer{font-size:12px;color:var(--stone)}
+
+footer{background:var(--ink)}
+.foot-inner{max-width:1060px;margin:0 auto;padding:2rem 2.5rem;display:flex;justify-content:space-between;align-items:center}
+.foot-name{font-family:var(--serif);font-size:18px;font-weight:300;font-style:italic;color:var(--warm-m)}
+.foot-links{display:flex;gap:1.5rem}
+.foot-links a{font-size:12.5px;color:#555;text-decoration:none;transition:color .15s}
+.foot-links a:hover{color:var(--warm-m)}
+
+.lb{display:none;position:fixed;inset:0;background:rgba(28,26,22,.96);z-index:1000;align-items:center;justify-content:center;padding:2rem;cursor:zoom-out}
+.lb.open{display:flex}
+.lb img{max-width:100%;max-height:90vh;border-radius:4px}
+.lb-x{position:fixed;top:1.5rem;right:1.5rem;font-size:24px;color:rgba(255,255,255,.5);cursor:pointer;line-height:1;z-index:1001}
+.lb-x:hover{color:#fff}
+
+/* ── EDITOR ───────────────────────────────── */
+#ed-btn{
+  position:fixed;bottom:2rem;right:2rem;z-index:200;
+  display:flex;align-items:center;gap:.5rem;
+  background:var(--ink);color:#fff;
+  font-family:var(--sans);font-size:13px;font-weight:500;
+  padding:.65rem 1.3rem;border-radius:999px;cursor:pointer;
+  border:none;box-shadow:0 4px 20px rgba(28,26,22,.35);transition:all .2s;
+}
+#ed-btn:hover{opacity:.88;transform:translateY(-1px)}
+#ed-btn.on{background:var(--warm)}
+#ed-panel{
+  position:fixed;top:0;right:-440px;width:440px;height:100vh;
+  background:var(--paper);border-left:.5px solid var(--line);
+  z-index:300;overflow:hidden;transition:right .3s ease;
+  box-shadow:-8px 0 32px rgba(28,26,22,.08);
+  display:flex;flex-direction:column;
+}
+#ed-panel.on{right:0}
+.ep-top{display:flex;align-items:center;justify-content:space-between;padding:1rem 1.4rem;border-bottom:.5px solid var(--line);background:var(--ink);flex-shrink:0}
+.ep-top h3{font-size:14px;font-weight:600;color:#fff;font-family:var(--sans)}
+.ep-x{background:none;border:none;color:rgba(255,255,255,.55);font-size:20px;cursor:pointer;line-height:1}
+.ep-x:hover{color:#fff}
+.ep-tabs{display:flex;border-bottom:.5px solid var(--line);flex-shrink:0}
+.ep-tab{flex:1;background:none;border:none;font-family:var(--sans);font-size:12.5px;font-weight:500;color:var(--stone);padding:.85rem;cursor:pointer;border-bottom:2px solid transparent;transition:all .15s}
+.ep-tab.on{color:var(--warm);border-bottom-color:var(--warm)}
+.ep-scroll{flex:1;overflow-y:auto;padding:1.2rem 1.4rem}
+.ep-pane{display:none}
+.ep-pane.on{display:block}
+.ep-sec-title{font-size:10.5px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--warm);margin:1.4rem 0 .8rem;display:flex;align-items:center;gap:8px}
+.ep-sec-title::after{content:'';flex:1;height:.5px;background:var(--line)}
+.ep-sec-title:first-child{margin-top:0}
+.ef{display:flex;flex-direction:column;gap:.3rem;margin-bottom:.8rem}
+.ef label{font-size:11.5px;font-weight:500;color:var(--stone)}
+.ef input,.ef textarea{padding:.6rem .8rem;border:.5px solid var(--line-s);border-radius:6px;font-family:var(--sans);font-size:13.5px;color:var(--ink);background:#fff;outline:none;transition:border-color .15s;width:100%}
+.ef input:focus,.ef textarea:focus{border-color:var(--warm)}
+.ef textarea{resize:vertical;min-height:70px;line-height:1.6}
+.ef .hint{font-size:11px;color:var(--stone)}
+.ep-acc{border:.5px solid var(--line);border-radius:8px;margin-bottom:.7rem;overflow:hidden}
+.ep-acc-hd{display:flex;align-items:center;justify-content:space-between;padding:.7rem 1rem;background:var(--sand);cursor:pointer;font-size:13px;font-weight:500;color:var(--ink);user-select:none}
+.ep-acc-hd svg{transition:transform .25s;color:var(--warm-m)}
+.ep-acc-hd.on svg{transform:rotate(180deg)}
+.ep-acc-body{display:none;padding:.9rem 1rem;border-top:.5px solid var(--line)}
+.ep-acc-body.on{display:block}
+.ep-2col{display:grid;grid-template-columns:1fr 1fr;gap:.6rem}
+.ep-foot{padding:1rem 1.4rem;border-top:.5px solid var(--line);background:var(--paper);flex-shrink:0}
+.ep-foot-title{font-size:10.5px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--stone);margin-bottom:.7rem}
+.ep-save{width:100%;padding:.72rem 1rem;border-radius:8px;border:none;font-family:var(--sans);font-size:13.5px;font-weight:500;cursor:pointer;display:flex;align-items:center;gap:.6rem;transition:all .15s;margin-bottom:.5rem}
+.ep-save-local{background:var(--warm-s);color:var(--warm-d);border:.5px solid var(--warm-m)}
+.ep-save-local:hover{background:var(--warm-m)}
+.ep-save-export{background:var(--ink);color:#fff}
+.ep-save-export:hover{opacity:.85}
+.ep-save-desc{font-size:11px;color:var(--stone);line-height:1.5;margin-bottom:.6rem;padding:0 .1rem}
+.ep-toast{position:fixed;bottom:6rem;right:2rem;z-index:400;background:var(--ink);color:#fff;font-family:var(--sans);font-size:13px;padding:.7rem 1.2rem;border-radius:8px;opacity:0;transform:translateY(8px);transition:all .25s;pointer-events:none}
+.ep-toast.on{opacity:1;transform:none}
+.ep-toast.green{background:#15803d}
+.ep-toast.amber{background:var(--warm)}
+
+@media(max-width:800px){
+  nav{padding:0 1.2rem}
+  .nav-link{display:none}
+  .hero{grid-template-columns:1fr;min-height:auto}
+  .hero-left{min-height:360px}
+  .hero-right{padding:2.5rem 1.5rem}
+  .stats-bar{grid-template-columns:1fr 1fr}
+  .container{padding:2.5rem 1.2rem}
+  .pcard-desc{grid-template-columns:1fr}
+  .exp-row,.edu-grid{grid-template-columns:1fr;gap:.4rem}
+  .img-grid{grid-template-columns:1fr 1fr}
+  #ed-panel{width:100%;right:-100%}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="#">Jacqueline Mónaco</a>
+  <div class="nav-links">
+    <a class="nav-link" href="#proyectos">Proyectos</a>
+    <a class="nav-link" href="#experiencia">Experiencia</a>
+    <a class="nav-link" href="#formacion">Formación</a>
+    <a class="nav-cta" href="mailto:jmonaco.arq@gmail.com">Contacto</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-left">
+    <img class="hero-photo" fetchpriority="high" src="images/5f9d4d2b1e6e.webp" alt="Jacqueline Mónaco">
+    <div class="hero-overlay"></div>
+    <div class="hero-left-bottom">
+      <div class="hero-quote" id="f-quote">"Diseño espacios que cuentan historias"</div>
+      <div class="hero-loc" id="f-location">📍 Tucumán, Argentina · 2026</div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-eyebrow" id="f-role">Arquitectura &amp; Interiorismo</div>
+    <h1 class="hero-name"><span id="f-firstname">Jacqueline</span><br><em id="f-lastname">Mónaco</em></h1>
+    <p class="hero-bio" id="f-bio">Estudiante avanzada de Arquitectura (UNT–FAU) con más de 4 años de experiencia real en estudios y constructoras. Especializada en dirección técnica de obra, planimetría integral y diseño de interiores.</p>
+    <div class="hero-pills" id="f-pills"><span class="pill">AutoCAD</span><span class="pill">SketchUp</span><span class="pill">Lumion</span><span class="pill">D5 Render</span><span class="pill">Revit / BIM</span><span class="pill">CorelDraw</span><span class="pill">Ms Project</span></div>
+    <div class="hero-contact">
+      <a class="hc" href="tel:3815821848" id="f-phone-a">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.64 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.55 1.09h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        <span id="f-phone">381-5821848</span>
+      </a>
+      <a class="hc" href="mailto:jmonaco.arq@gmail.com" id="f-email-a">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,12 2,6"></polyline></svg>
+        <span id="f-email">jmonaco.arq@gmail.com</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="stats-bar" id="stats-bar">
+  <div class="sc"><div class="sc-n" id="s1n">4+</div><div class="sc-l" id="s1l">años de experiencia</div></div>
+  <div class="sc"><div class="sc-n" id="s2n">6</div><div class="sc-l" id="s2l">proyectos</div></div>
+  <div class="sc"><div class="sc-n" id="s3n">10+</div><div class="sc-l" id="s3l">obras ejecutadas</div></div>
+  <div class="sc"><div class="sc-n" id="s4n">FAU</div><div class="sc-l" id="s4l">UNT · último año</div></div>
+</div>
+
+<div class="container" id="proyectos">
+  <div class="sec-hd">
+    <span class="sec-num">01</span>
+    <h2 class="sec-title">Proyectos</h2>
+    <div class="sec-line"></div>
+  </div>
+  <div class="proj-list">
+
+    
+    
+    
+    
+    
+    
+  <div class="pcard" id="pcard-ep">
+      <div class="pcard-hd" onclick="toggleCard('ep')">
+        <div>
+          <div class="pcard-year" data-field="ep-year">2021 - 2022</div>
+          <div class="pcard-name" data-field="ep-name">Casa SP — Vivienda unifamiliar</div>
+          <div class="pcard-tags" data-field="ep-tags"><span class="ptag">Arquitectura residencial</span><span class="ptag">Documentación técnica</span><span class="ptag">Dirección de obra</span></div>
+        </div>
+        <svg class="pcard-arrow" id="arrow-ep" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </div>
+      <div class="pcard-body" id="body-ep">
+        <div class="pcard-desc">
+          <div class="pdesc-block">
+            <div class="pdesc-label">Sobre el proyecto</div>
+            <p class="pdesc-text" data-field="ep-desc">Proyecto de vivienda unifamiliar con documentación técnica completa y seguimiento de obra. Incluye planimetría integral, detalles constructivos e instalaciones.</p>
+          </div>
+          <div class="pdesc-block">
+            <div class="pdesc-label">Alcance</div>
+            <ul class="pdesc-list" id="bullets-ep"><li>Documentación de conforme a obra construida</li><li>Seguimiento y dirección técnica de obra</li><li>Confección de carpeta ejecutiva de proyecto</li><li>Diseño de mobiliario interior</li></ul></div>
+        </div>
+        
+        <div class="pcard-gallery">
+          <div class="gal-label">Documentación &amp; obra</div>
+          <div class="img-grid">
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/50c866237521.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/499259f5a1dc.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/c1c9ac720f1f.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/9b44acb42c67.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/9318d1519714.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/62f74ab8ee79.webp" loading="lazy" alt=""></figure>
+          </div>
+        </div>
+
+      </div>
+    </div><div class="pcard" id="pcard-arbol">
+      <div class="pcard-hd" onclick="toggleCard('arbol')">
+        <div>
+          <div class="pcard-year" data-field="arbol-year">2023 – 2024</div>
+          <div class="pcard-name" data-field="arbol-name">Casa Árbol — Vivienda unifamiliar · Las Yungas Golf &amp; Country Club</div>
+          <div class="pcard-tags" data-field="arbol-tags"><span class="ptag">Dirección técnica de obra</span><span class="ptag">Fotografía de obra</span><span class="ptag">Baus Construcciones</span><span class="ptag">Arquitectura residencial</span></div>
+        </div>
+        <svg class="pcard-arrow" id="arrow-arbol" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </div>
+      <div class="pcard-body" id="body-arbol">
+        <div class="pcard-desc">
+          <div class="pdesc-block">
+            <div class="pdesc-label">Sobre el proyecto</div>
+            <p class="pdesc-text" data-field="arbol-desc">Vivienda unifamiliar ejecutada en Las Yungas Golf &amp; Country Club. Registro fotográfico completo del proceso constructivo desde estructura hasta terminaciones.</p>
+          </div>
+          <div class="pdesc-block">
+            <div class="pdesc-label">Alcance</div>
+            <ul class="pdesc-list" id="bullets-arbol"><li>Dirección técnica y seguimiento integral de obra</li><li>Gestión de obra: planificación, certificación y cómputo</li><li>Documentación técnica completa para ejecución</li><li>Cotización de materiales y comparativa de presupuestos</li></ul></div>
+        </div>
+        
+        <div class="pcard-gallery">
+          <div class="gal-label">Registro de obra</div>
+          <div class="img-grid">
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/2106505a0c5e.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/ae0077a9df51.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/62208e3a9958.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/87eb8dcb1234.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/78cf341486e2.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/570b8f079057.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/3db4f1e26c19.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/bcb863e9b326.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/d2e606689f54.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/adb01141cbf6.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/4621c8a96fa0.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/c86897da1269.webp" loading="lazy" alt=""></figure>
+          </div>
+        </div>
+
+      </div>
+    </div><div class="pcard" id="pcard-jn">
+      <div class="pcard-hd" onclick="toggleCard('jn')">
+        <div>
+          <div class="pcard-year" data-field="jn-year">2025</div>
+          <div class="pcard-name" data-field="jn-name">Casa JN — Proyecto integral de arquitectura e interiorismo</div>
+          <div class="pcard-tags" data-field="jn-tags"><span class="ptag">Arquitectura residencial</span><span class="ptag">Interiorismo</span><span class="ptag">Renders 3D</span><span class="ptag">Diseño de ambientes</span></div>
+        </div>
+        <svg class="pcard-arrow" id="arrow-jn" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </div>
+      <div class="pcard-body" id="body-jn">
+        <div class="pcard-desc">
+          <div class="pdesc-block">
+            <div class="pdesc-label">Sobre el proyecto</div>
+            <p class="pdesc-text" data-field="jn-desc">Proyecto integral de vivienda unifamiliar de gran escala con desarrollo completo de interiorismo. Incluye exterior, espacios de estar, dormitorio principal, vestidor, cine, quincho con piscina y terraza.</p>
+          </div>
+          <div class="pdesc-block">
+            <div class="pdesc-label">Alcance</div>
+            <ul class="pdesc-list" id="bullets-jn"><li>Interiorismo en ambientes exteriores</li><li>Renders de alta calidad con D5</li><li>Presentación ejecutiva con carpeta de proyecto</li></ul></div>
+        </div>
+        
+        <div class="pcard-gallery">
+          <div class="gal-label">Renders &amp; visualizaciones</div>
+          <div class="img-grid">
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/ec4f85caf8ee.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/ed184dd45597.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/67a49d15ddcf.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/d877c43e3447.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/479a9798ec39.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/e6d1c6d33b4d.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/d453d6550b50.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/04a0fb8dc6dd.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/f2202c2d1625.webp" loading="lazy" alt=""></figure>
+          </div>
+        </div>
+
+      </div>
+    </div><div class="pcard" id="pcard-piazza">
+      <div class="pcard-hd" onclick="toggleCard('piazza')">
+        <div>
+          <div class="pcard-year" data-field="piazza-year">2025</div>
+          <div class="pcard-name" data-field="piazza-name">La Piazza — Proyecto de arquitectura e interiorismo</div>
+          <div class="pcard-tags" data-field="piazza-tags"><span class="ptag">Arquitectura</span><span class="ptag">Interiorismo</span><span class="ptag">Renders 3D</span><span class="ptag">Proyecto ejecutivo</span></div>
+        </div>
+        <svg class="pcard-arrow" id="arrow-piazza" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </div>
+      <div class="pcard-body" id="body-piazza">
+        <div class="pcard-desc">
+          <div class="pdesc-block">
+            <div class="pdesc-label">Sobre el proyecto</div>
+            <p class="pdesc-text" data-field="piazza-desc">Proyecto integral de arquitectura e interiorismo con renders 3D de alta calidad. Incluye visualización completa de ambientes, exteriores y detalles de diseño, con carpeta ejecutiva completa.</p>
+          </div>
+          <div class="pdesc-block">
+            <div class="pdesc-label">Alcance</div>
+            <ul class="pdesc-list" id="bullets-piazza"><li>Diseño arquitectónico y propuesta de interiorismo</li><li>Renders y visualizaciones 3D de todos los ambientes</li><li>Documentación técnica ejecutiva completa</li><li>Confección de carpeta de proyecto para ejecución</li></ul></div>
+        </div>
+        
+        <div class="pcard-gallery">
+          <div class="gal-label">Renders &amp; visualizaciones</div>
+          <div class="img-grid">
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/e79e7217cf16.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/332428dc83ae.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/2bf6a27a3019.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/4510c559cd0a.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/74161acef6b5.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/f005e2fb8760.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/f68b9b41a087.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/c79b066a3417.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/de819572a008.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/2d6e01a356f7.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/2df91e20c6b3.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/913d5574332d.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/84e19f818942.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/0e45ad6f2447.webp" loading="lazy" alt=""></figure>
+          </div>
+        </div>
+          
+      </div>
+    </div><div class="pcard" id="pcard-sm">
+      <div class="pcard-hd" onclick="toggleCard('sm')">
+        <div>
+          <div class="pcard-year" data-field="sm-year">2025 - 2026</div>
+          <div class="pcard-name" data-field="sm-name">Proyecto SM — Vivienda unifamiliar</div>
+          <div class="pcard-tags" data-field="sm-tags"><span class="ptag">Proyecto ejecutivo</span><span class="ptag">Arquitectura residencial</span></div>
+        </div>
+        <svg class="pcard-arrow" id="arrow-sm" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </div>
+      <div class="pcard-body" id="body-sm">
+        <div class="pcard-desc">
+          <div class="pdesc-block">
+            <div class="pdesc-label">Sobre el proyecto</div>
+            <p class="pdesc-text" data-field="sm-desc">Remodelacion de departamento residencial con documentación técnica ejecutiva completa. Incluye planimetría integral, detalles constructivos y diseño de interiores.</p>
+          </div>
+          <div class="pdesc-block">
+            <div class="pdesc-label">Alcance</div>
+            <ul class="pdesc-list" id="bullets-sm"><li>Planimetría integral: plantas, cortes, vistas y replanteos</li><li>Documentación de instalaciones y detalles constructivos</li><li>Carpeta ejecutiva completa para ejecución</li></ul></div>
+        </div>
+        
+        <div class="pcard-gallery">
+          <div class="gal-label">Registro de obra</div>
+          <div class="img-grid">
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/20b73607dfb3.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/562b96bb1bd8.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/5e9b499d2e1c.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/aa6e56bc6824.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/9c59a6394db7.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/b87e2769b2c8.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/85d81908436a.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/cc2c4dac3cc1.webp" loading="lazy" alt=""></figure>
+          </div>
+        </div>
+          
+      </div>
+    </div><div class="pcard" id="pcard-metravel">
+      <div class="pcard-hd" onclick="toggleCard('metravel')">
+        <div>
+          <div class="pcard-year" data-field="metravel-year">2026</div>
+          <div class="pcard-name" data-field="metravel-name">Metravel — Proyecto de diseño comercial</div>
+          <div class="pcard-tags" data-field="metravel-tags"><span class="ptag">Diseño comercial</span><span class="ptag">Visualización 3D</span><span class="ptag">Proyecto independiente</span></div>
+        </div>
+        <svg class="pcard-arrow" id="arrow-metravel" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </div>
+      <div class="pcard-body" id="body-metravel">
+        <div class="pcard-desc">
+          <div class="pdesc-block">
+            <div class="pdesc-label">Sobre el proyecto</div>
+            <p class="pdesc-text" data-field="metravel-desc">Proyecto de diseño y concepto para espacio comercial. Incluye propuesta visual completa con renders conceptuales y documentación de presentación.</p>
+          </div>
+          <div class="pdesc-block">
+            <div class="pdesc-label">Alcance</div>
+            <ul class="pdesc-list" id="bullets-metravel"><li>Concepto y propuesta de diseño comercial</li><li>Visualizaciones y renders de presentación</li><li>Documentación ejecutiva del proyecto</li></ul></div>
+        </div>
+        
+        <div class="pcard-gallery">
+          <div class="gal-label">Renders &amp; visualizaciones</div>
+          <div class="img-grid">
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/3334ba636ad3.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/61cbdbb2bd56.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/9219db7a1e8c.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/ddb1c5097198.webp" loading="lazy" alt=""></figure>
+            <figure class="img-thumb" onclick="openLBFrom(this)"><img src="images/bd220aa14c2c.webp" loading="lazy" alt=""></figure>
+          </div>
+        </div>
+
+      </div>
+    </div></div>
+</div>
+
+<div class="divider"></div>
+
+<div class="container">
+  <div class="sec-hd">
+    <span class="sec-num">02</span>
+    <h2 class="sec-title">Herramientas</h2>
+    <div class="sec-line"></div>
+  </div>
+  <div class="skill-grid">
+    <div class="skill-card"><div class="skill-icon">📐</div><div class="skill-name">Modelado &amp; CAD</div><div class="skill-items">AutoCAD · SketchUp<br>Revit · BIM<br>Microsoft Project</div></div>
+    <div class="skill-card"><div class="skill-icon">🎨</div><div class="skill-name">Render &amp; Visualización</div><div class="skill-items">Lumion · D5 Render<br>CorelDraw<br>Presentaciones visuales</div></div>
+    <div class="skill-card"><div class="skill-icon">📋</div><div class="skill-name">Documentación técnica</div><div class="skill-items">Planimetría integral<br>Planos de instalaciones<br>Carpetas municipales</div></div>
+    <div class="skill-card"><div class="skill-icon">🏗️</div><div class="skill-name">Gestión de obra</div><div class="skill-items">Dirección técnica<br>Planificación · Cómputo<br>Presupuesto</div></div>
+    <div class="skill-card"><div class="skill-icon">🛋️</div><div class="skill-name">Diseño de interiores</div><div class="skill-items">Interiorismo residencial<br>Diseño de mobiliario<br>Refuncionalización</div></div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<div class="container" id="experiencia">
+  <div class="sec-hd">
+    <span class="sec-num">03</span>
+    <h2 class="sec-title">Experiencia</h2>
+    <div class="sec-line"></div>
+  </div>
+  <div class="exp-list" id="exp-list">
+    <div class="exp-row"><div><div class="exp-years">Nov 2024 — Actualidad</div><div class="exp-co">Grupo Crane</div></div><div><div class="exp-role">Documentación técnica &amp; Planimetría</div><div class="exp-detail">Documentación técnica, planimetría integral y gestión de aprobaciones municipales.</div></div></div>
+    <div class="exp-row"><div><div class="exp-years">Ago 2023 — Actualidad</div><div class="exp-co">Proyectos independientes</div></div><div><div class="exp-role">Arquitecta &amp; Diseñadora</div><div class="exp-detail">Arquitectura e interiorismo, renders y documentación técnica para clientes particulares.</div></div></div>
+    <div class="exp-row"><div><div class="exp-years">Oct 2023 — Nov 2024</div><div class="exp-co">Baus Construcciones</div></div><div><div class="exp-role">Directora técnica de obra</div><div class="exp-detail">Dirección técnica, gestión de obra, diseño de mobiliario y presupuestos.</div><div class="exp-works"><span class="exp-work">La Arboleda Country</span><span class="exp-work">Las Yungas Golf &amp; CC</span></div></div></div>
+    <div class="exp-row"><div><div class="exp-years">Feb 2023 — Oct 2023</div><div class="exp-co">Dual Atelier</div></div><div><div class="exp-role">Directora técnica de obra</div><div class="exp-detail">Dirección técnica y gestión de 4 proyectos residenciales.</div><div class="exp-works"><span class="exp-work">San Andrés</span><span class="exp-work">Las Heras 1564</span><span class="exp-work">Virgen de la Merced 885</span><span class="exp-work">Country Portal del Sol</span></div></div></div>
+    <div class="exp-row"><div><div class="exp-years">Dic 2021 — Feb 2023</div><div class="exp-co">CPG Estudio</div></div><div><div class="exp-role">Arquitecta &amp; Directora técnica</div><div class="exp-detail">Arquitectura, interiorismo, gestión de obra y documentación técnica.</div><div class="exp-works"><span class="exp-work">Monteagudo 573</span><span class="exp-work">Club Los Nogales</span><span class="exp-work">Atelier — Santiago 959</span></div></div></div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<div class="container" id="formacion">
+  <div class="sec-hd">
+    <span class="sec-num">04</span>
+    <h2 class="sec-title">Formación</h2>
+    <div class="sec-line"></div>
+  </div>
+  <div class="edu-grid">
+    <div>
+      <div class="edu-subtitle">Educación</div>
+      <div class="edu-item" id="edu-0"><div class="edu-year" id="edu-0-year">2014 — 2026 (en curso)</div><div class="edu-name" id="edu-0-name">Universidad Nacional de Tucumán — FAU</div><div class="edu-degree" id="edu-0-degree">Arquitectura y Urbanismo · Estudiante avanzada de último año</div></div>
+      <div class="edu-item" id="edu-1"><div class="edu-year" id="edu-1-year">Egreso 2013</div><div class="edu-name" id="edu-1-name">Col. Ntra. Sra. del Huerto</div><div class="edu-degree" id="edu-1-degree">Bachiller en Economía y Gestión de las Organizaciones</div></div>
+    </div>
+    <div>
+      <div class="edu-subtitle">Cursos &amp; Capacitaciones</div>
+      <div class="cert-list">
+        <div class="cert-item" id="cert-0"><span class="cert-dot"></span><div><div class="cert-name" id="cert-0-name">AutoCAD &amp; CorelDraw</div><div class="cert-issuer" id="cert-0-issuer">Formación técnica</div></div></div>
+        <div class="cert-item" id="cert-1"><span class="cert-dot"></span><div><div class="cert-name" id="cert-1-name">Planificación de Obras de la Construcción</div><div class="cert-issuer" id="cert-1-issuer">COC. RA</div></div></div>
+        <div class="cert-item" id="cert-2"><span class="cert-dot"></span><div><div class="cert-name" id="cert-2-name">Control de Obras</div><div class="cert-issuer" id="cert-2-issuer">Arq. Torres Formento</div></div></div>
+        <div class="cert-item" id="cert-3"><span class="cert-dot"></span><div><div class="cert-name" id="cert-3-name">Revit — Metodología BIM</div><div class="cert-issuer" id="cert-3-issuer">Edutin Academy · En curso</div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="foot-inner">
+    <div class="foot-name">Jacqueline Mónaco</div>
+    <div class="foot-links">
+      <a href="mailto:jmonaco.arq@gmail.com">jmonaco.arq@gmail.com</a>
+      <a href="tel:3815821848">381-5821848</a>
+      <a>Tucumán, Argentina</a>
+    </div>
+  </div>
+</footer>
+
+<div class="lb" id="lb" onclick="closeLB()">
+  <div class="lb-x" onclick="closeLB()">✕</div>
+  <img id="lb-img" src="" alt="">
+</div>
+
+<!-- EDIT BUTTON -->
+
+
+<!-- EDIT PANEL -->
+
+
+
+
+<!-- EDIT BUTTON -->
+<button id="ed-btn" hidden onclick="edToggle()">
+  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+  Editar portfolio
+</button>
+
+<!-- EDIT PANEL -->
+<div id="ed-panel" hidden>
+  <div class="ep-top">
+    <h3>✏️ Editor de portfolio</h3>
+    <button class="ep-x" onclick="edToggle()">✕</button>
+  </div>
+  <div class="ep-tabs">
+    <button class="ep-tab on" onclick="edTab('perfil',this)">Perfil</button>
+    <button class="ep-tab" onclick="edTab('proyectos',this)">Proyectos</button>
+    <button class="ep-tab" onclick="edTab('exp',this)">Experiencia</button>
+  </div>
+  <div class="ep-scroll">
+
+    <!-- PERFIL -->
+    <div class="ep-pane on" id="ep-perfil">
+      <div class="ep-sec-title">Información personal</div>
+      <div class="ef"><label>Nombre</label><input id="ef-fn" placeholder="Jacqueline"/></div>
+      <div class="ef"><label>Apellido</label><input id="ef-ln" placeholder="Mónaco"/></div>
+      <div class="ef"><label>Profesión (subtítulo)</label><input id="ef-role" placeholder="Arquitectura & Interiorismo"/></div>
+      <div class="ef"><label>Frase del hero</label><input id="ef-quote" placeholder="Diseño espacios que cuentan historias"/></div>
+      <div class="ef"><label>Biografía</label><textarea id="ef-bio" rows="4"></textarea></div>
+      <div class="ep-sec-title">Contacto</div>
+      <div class="ef"><label>Email</label><input id="ef-email" type="email"/></div>
+      <div class="ef"><label>Teléfono</label><input id="ef-phone"/></div>
+      <div class="ef"><label>Ubicación</label><input id="ef-location"/></div>
+      <div class="ep-sec-title">Herramientas</div>
+      <div class="ef"><label>Pills (separadas por coma)</label><input id="ef-pills"/><span class="hint">Ej: AutoCAD, SketchUp, Lumion, Revit</span></div>
+      <div class="ep-sec-title">Stats (barra negra)</div>
+      <div class="ep-2col">
+        <div class="ef"><label>Nº 1</label><input id="ef-s1n"/></div>
+        <div class="ef"><label>Texto 1</label><input id="ef-s1l"/></div>
+        <div class="ef"><label>Nº 2</label><input id="ef-s2n"/></div>
+        <div class="ef"><label>Texto 2</label><input id="ef-s2l"/></div>
+        <div class="ef"><label>Nº 3</label><input id="ef-s3n"/></div>
+        <div class="ef"><label>Texto 3</label><input id="ef-s3l"/></div>
+        <div class="ef"><label>Nº 4</label><input id="ef-s4n"/></div>
+        <div class="ef"><label>Texto 4</label><input id="ef-s4l"/></div>
+      </div>
+    </div>
+
+    <!-- PROYECTOS -->
+    <div class="ep-pane" id="ep-proyectos">
+      <div id="ep-proj-container"></div>
+    </div>
+
+    <!-- EXPERIENCIA -->
+    <div class="ep-pane" id="ep-exp">
+      <div id="ep-exp-container"></div>
+    </div>
+
+  </div>
+  <div class="ep-foot">
+    <div class="ep-foot-title">Guardar cambios</div>
+    <button class="ep-save ep-save-local" onclick="edSaveLocal()">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+      Guardar para mí
+    </button>
+    <div class="ep-save-desc">Los cambios persisten en este navegador y equipo. Al reabrir el HTML se restauran solos.</div>
+    <button class="ep-save ep-save-export" onclick="edExport()">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Guardar y exportar HTML
+    </button>
+    <div class="ep-save-desc">Descarga un HTML limpio con todos los cambios, listo para enviar o compartir.</div>
+  </div>
+</div>
+
+<div class="ep-toast" id="ep-toast" hidden></div>
+
+<script>
+/* ── LIGHTBOX ──────────────────────────────── */
+function openLBFrom(el){const i=el.querySelector('img');if(i)openLB(i.currentSrc||i.src);}
+function openLB(src){document.getElementById('lb-img').src=src;document.getElementById('lb').classList.add('open');}
+function closeLB(){document.getElementById('lb').classList.remove('open');}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLB();});
+
+/* ── PROJECTS ACCORDION ────────────────────── */
+function toggleCard(id){
+  const body=document.getElementById('body-'+id);
+  const arrow=document.getElementById('arrow-'+id);
+  if(!body)return;
+  const open=body.classList.toggle('open');
+  arrow.classList.toggle('open',open);
+}
+setTimeout(()=>toggleCard('jn'),400);
+
+/* ═══════════════════════════════════════════════
+   EDITOR — limpio, sin redefiniciones
+   ═══════════════════════════════════════════════ */
+const SK = 'jm_ed_v3';
+
+/* helpers */
+function $v(id){ const e=document.getElementById(id); return e?e.value.trim():''; }
+function $t(id){ const e=document.getElementById(id); return e?e.textContent.trim():''; }
+function $sv(id,v){ const e=document.getElementById(id); if(e&&v!=null)e.value=v; }
+function $st(id,v){ const e=document.getElementById(id); if(e&&v)e.textContent=v; }
+function $qs(el,sel,v){ const e=el.querySelector(sel); if(e&&v)e.textContent=v; }
+
+/* ── Fill form from current page ──────────── */
+function edFillForm(){
+  $sv('ef-fn',   $t('f-firstname'));
+  $sv('ef-ln',   $t('f-lastname'));
+  $sv('ef-role', $t('f-role'));
+  $sv('ef-quote',$t('f-quote').replace(/["""]/g,'').trim());
+  $sv('ef-bio',  $t('f-bio'));
+  $sv('ef-email',$t('f-email'));
+  $sv('ef-phone',$t('f-phone'));
+  $sv('ef-location',$t('f-location').replace('📍','').trim());
+  $sv('ef-pills',[...(document.querySelectorAll('.hero-pills .pill')||[])].map(p=>p.textContent.trim()).join(', '));
+  $sv('ef-s1n',$t('s1n')); $sv('ef-s1l',$t('s1l'));
+  $sv('ef-s2n',$t('s2n')); $sv('ef-s2l',$t('s2l'));
+  $sv('ef-s3n',$t('s3n')); $sv('ef-s3l',$t('s3l'));
+  $sv('ef-s4n',$t('s4n')); $sv('ef-s4l',$t('s4l'));
+}
+
+/* ── Build project editors ─────────────────── */
+function edBuildProjects(){
+  const c=document.getElementById('ep-proj-container');
+  if(!c)return;
+  c.innerHTML=[...document.querySelectorAll('.pcard')].map((card,i)=>{
+    const pid=card.id.replace('pcard-','');
+    const yr  =card.querySelector('.pcard-year')?.textContent.trim()||'';
+    const nm  =card.querySelector('.pcard-name')?.textContent.trim()||'';
+    const tgs =[...card.querySelectorAll('.ptag')].map(t=>t.textContent.trim()).join(', ');
+    const desc=card.querySelector('.pdesc-text')?.textContent.trim()||'';
+    const buls=[...(document.getElementById('bullets-'+pid)?.querySelectorAll('li')||[])].map(l=>l.textContent.trim()).join('\n');
+    const safe=s=>s.replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');
+    return `<div class="ep-acc">
+      <div class="ep-acc-hd" onclick="edAcc('epa-${i}',this)">
+        <span>${safe(yr)} — ${safe(nm.split('—')[0].trim())}</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+      <div class="ep-acc-body" id="epa-${i}">
+        <div class="ef"><label>Año / Período</label>
+          <input data-pid="${pid}" data-fld="year" value="${safe(yr)}" oninput="liveProj(this)"/>
+          <span class="hint">Al guardar se reordena cronológicamente</span>
+        </div>
+        <div class="ef"><label>Nombre</label><input data-pid="${pid}" data-fld="name" value="${safe(nm)}" oninput="liveProj(this)"/></div>
+        <div class="ef"><label>Tags (separados por coma)</label><input data-pid="${pid}" data-fld="tags" value="${safe(tgs)}" oninput="liveProj(this)"/></div>
+        <div class="ef"><label>Descripción</label><textarea data-pid="${pid}" data-fld="desc" oninput="liveProj(this)" rows="3">${safe(desc)}</textarea></div>
+        <div class="ef"><label>Alcance — uno por línea</label>
+          <textarea data-pid="${pid}" data-fld="bullets" oninput="liveProj(this)" rows="5">${safe(buls)}</textarea>
+          <span class="hint">Cada línea se convierte en un punto del listado</span>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+/* ── Build experience + education + certs ──── */
+function edBuildExp(){
+  const c=document.getElementById('ep-exp-container');
+  if(!c)return;
+  const expHtml=[...document.querySelectorAll('.exp-row')].map((row,i)=>{
+    const safe=s=>(s||'').replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');
+    const yr    =row.querySelector('.exp-years')?.textContent.trim()||'';
+    const co    =row.querySelector('.exp-co')?.textContent.trim()||'';
+    const role  =row.querySelector('.exp-role')?.textContent.trim()||'';
+    const detail=row.querySelector('.exp-detail')?.textContent.trim()||'';
+    const works =[...row.querySelectorAll('.exp-work')].map(w=>w.textContent.trim()).join(', ');
+    return `<div class="ep-acc">
+      <div class="ep-acc-hd" onclick="edAcc('epe-${i}',this)">
+        <span>${safe(co)||'Experiencia '+(i+1)}</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+      <div class="ep-acc-body" id="epe-${i}">
+        <div class="ef"><label>Período</label><input data-ei="${i}" data-fld="years" value="${safe(yr)}" oninput="liveExp(this)"/></div>
+        <div class="ef"><label>Empresa</label><input data-ei="${i}" data-fld="co" value="${safe(co)}" oninput="liveExp(this)"/></div>
+        <div class="ef"><label>Rol</label><input data-ei="${i}" data-fld="role" value="${safe(role)}" oninput="liveExp(this)"/></div>
+        <div class="ef"><label>Descripción</label><textarea data-ei="${i}" data-fld="detail" rows="2" oninput="liveExp(this)">${safe(detail)}</textarea></div>
+        <div class="ef"><label>Obras (separadas por coma)</label><input data-ei="${i}" data-fld="works" value="${safe(works)}" oninput="liveExp(this)"/></div>
+      </div>
+    </div>`;
+  }).join('');
+
+  const eduHtml=`
+    <div class="ep-sec-title" style="margin-top:1.4rem">Educación formal</div>
+    ${[0,1].map(i=>{
+      const safe=s=>(s||'').replace(/&/g,'&amp;').replace(/"/g,'&quot;');
+      return `<div class="ep-acc">
+        <div class="ep-acc-hd" onclick="edAcc('edu-acc-${i}',this)">
+          <span>${safe($t('edu-'+i+'-name'))||'Educación '+(i+1)}</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="ep-acc-body" id="edu-acc-${i}">
+          <div class="ef"><label>Período / Año</label><input id="ef-edu${i}y" data-ei="${i}" data-fld="year" value="${safe($t('edu-'+i+'-year'))}" oninput="liveEdu(this)"/></div>
+          <div class="ef"><label>Institución</label><input id="ef-edu${i}n" data-ei="${i}" data-fld="name" value="${safe($t('edu-'+i+'-name'))}" oninput="liveEdu(this)"/></div>
+          <div class="ef"><label>Título / Carrera</label><input id="ef-edu${i}d" data-ei="${i}" data-fld="degree" value="${safe($t('edu-'+i+'-degree'))}" oninput="liveEdu(this)"/></div>
+        </div>
+      </div>`;
+    }).join('')}
+    <div class="ep-sec-title" style="margin-top:1.4rem">Cursos & Certificaciones</div>
+    ${[0,1,2,3].map(i=>{
+      const safe=s=>(s||'').replace(/&/g,'&amp;').replace(/"/g,'&quot;');
+      return `<div class="ep-acc">
+        <div class="ep-acc-hd" onclick="edAcc('cert-acc-${i}',this)">
+          <span>${safe($t('cert-'+i+'-name'))||'Certificación '+(i+1)}</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="ep-acc-body" id="cert-acc-${i}">
+          <div class="ef"><label>Nombre del curso</label><input id="ef-cert${i}n" data-ci="${i}" data-fld="name" value="${safe($t('cert-'+i+'-name'))}" oninput="liveCert(this)"/></div>
+          <div class="ef"><label>Institución / Detalle</label><input id="ef-cert${i}i" data-ci="${i}" data-fld="issuer" value="${safe($t('cert-'+i+'-issuer'))}" oninput="liveCert(this)"/></div>
+        </div>
+      </div>`;
+    }).join('')}`;
+
+  c.innerHTML = expHtml + eduHtml;
+}
+
+function edAcc(id,hd){
+  const b=document.getElementById(id);
+  if(!b)return;
+  const on=b.classList.toggle('on');
+  hd.classList.toggle('on',on);
+}
+
+/* ── Live updates ───────────────────────────── */
+function liveProj(el){
+  const pid=el.dataset.pid, fld=el.dataset.fld;
+  const card=document.getElementById('pcard-'+pid);
+  if(!card)return;
+  if(fld==='year'){  const e=card.querySelector(`[data-field="${pid}-year"]`);   if(e)e.textContent=el.value; }
+  if(fld==='name'){  const e=card.querySelector(`[data-field="${pid}-name"]`);   if(e)e.textContent=el.value; }
+  if(fld==='desc'){  const e=card.querySelector(`[data-field="${pid}-desc"]`);   if(e)e.textContent=el.value; }
+  if(fld==='tags'){
+    const c=card.querySelector(`[data-field="${pid}-tags"]`);
+    if(c)c.innerHTML=el.value.split(',').map(t=>`<span class="ptag">${t.trim()}</span>`).filter(t=>t.length>14).join('');
+  }
+  if(fld==='bullets'){
+    const ul=document.getElementById('bullets-'+pid);
+    if(ul)ul.innerHTML=el.value.split('\n').map(l=>l.trim()).filter(Boolean).map(l=>`<li>${l}</li>`).join('');
+  }
+}
+
+function liveExp(el){
+  const row=document.querySelectorAll('.exp-row')[parseInt(el.dataset.ei)];
+  if(!row)return;
+  const fld=el.dataset.fld;
+  const map={years:'.exp-years',co:'.exp-co',role:'.exp-role',detail:'.exp-detail'};
+  if(map[fld]){ const e=row.querySelector(map[fld]); if(e)e.textContent=el.value; }
+  if(fld==='works'){
+    let wc=row.querySelector('.exp-works');
+    if(!wc){ wc=document.createElement('div'); wc.className='exp-works'; row.lastElementChild.appendChild(wc); }
+    wc.innerHTML=el.value.split(',').map(w=>w.trim()).filter(Boolean).map(w=>`<span class="exp-work">${w}</span>`).join('');
+  }
+}
+
+function liveEdu(el){
+  const i=el.dataset.ei, fld=el.dataset.fld;
+  const ids={year:`edu-${i}-year`,name:`edu-${i}-name`,degree:`edu-${i}-degree`};
+  $st(ids[fld],el.value);
+}
+
+function liveCert(el){
+  const i=el.dataset.ci, fld=el.dataset.fld;
+  const ids={name:`cert-${i}-name`,issuer:`cert-${i}-issuer`};
+  $st(ids[fld],el.value);
+}
+
+/* ── Sort projects chronologically ─────────── */
+function sortProjects(){
+  const list=document.querySelector('.proj-list');
+  if(!list)return;
+  const cards=[...list.querySelectorAll(':scope > .pcard')];
+  cards.sort((a,b)=>{
+    const getY=c=>{ const m=(c.querySelector('.pcard-year')?.textContent||'').match(/\d{4}/); return m?+m[0]:9999; };
+    return getY(a)-getY(b);
+  });
+  cards.forEach(c=>list.appendChild(c));
+}
+
+/* ── Apply form → page ──────────────────────── */
+function edApply(){
+  const fn=$v('ef-fn'),ln=$v('ef-ln');
+  if(fn)$st('f-firstname',fn);
+  if(ln)$st('f-lastname',ln);
+  const role=$v('ef-role');    if(role)$st('f-role',role);
+  const quote=$v('ef-quote');  if(quote)$st('f-quote','"'+quote+'"');
+  const bio=$v('ef-bio');      if(bio)$st('f-bio',bio);
+  const email=$v('ef-email');
+  if(email){ $st('f-email',email); const a=document.getElementById('f-email-a'); if(a)a.href='mailto:'+email; }
+  const phone=$v('ef-phone');
+  if(phone){ $st('f-phone',phone); const a=document.getElementById('f-phone-a'); if(a)a.href='tel:'+phone.replace(/\D/g,''); }
+  const loc=$v('ef-location'); if(loc)$st('f-location','📍 '+loc);
+  const pills=$v('ef-pills');
+  if(pills){ const p=document.getElementById('f-pills'); if(p)p.innerHTML=pills.split(',').map(t=>`<span class="pill">${t.trim()}</span>`).join(''); }
+  [['s1n','s1l'],['s2n','s2l'],['s3n','s3l'],['s4n','s4l']].forEach(([n,l])=>{
+    const nv=$v('ef-'+n),lv=$v('ef-'+l);
+    if(nv)$st(n,nv); if(lv)$st(l,lv);
+  });
+  sortProjects();
+}
+
+/* ── Collect full state from page ───────────── */
+function edCollect(){
+  return{
+    fn:$v('ef-fn'),ln:$v('ef-ln'),role:$v('ef-role'),
+    quote:$v('ef-quote'),bio:$v('ef-bio'),
+    email:$v('ef-email'),phone:$v('ef-phone'),location:$v('ef-location'),
+    pills:$v('ef-pills'),
+    s1n:$v('ef-s1n'),s1l:$v('ef-s1l'),s2n:$v('ef-s2n'),s2l:$v('ef-s2l'),
+    s3n:$v('ef-s3n'),s3l:$v('ef-s3l'),s4n:$v('ef-s4n'),s4l:$v('ef-s4l'),
+    projects:[...document.querySelectorAll('.pcard')].map(card=>{
+      const pid=card.id.replace('pcard-','');
+      return{
+        pid,
+        year: card.querySelector('.pcard-year')?.textContent.trim()||'',
+        name: card.querySelector('.pcard-name')?.textContent.trim()||'',
+        tags: [...card.querySelectorAll('.ptag')].map(t=>t.textContent.trim()).join(', '),
+        desc: card.querySelector('.pdesc-text')?.textContent.trim()||'',
+        bullets:[...(document.getElementById('bullets-'+pid)?.querySelectorAll('li')||[])].map(l=>l.textContent.trim()),
+      };
+    }),
+    experience:[...document.querySelectorAll('.exp-row')].map(row=>({
+      years: row.querySelector('.exp-years')?.textContent.trim()||'',
+      co:    row.querySelector('.exp-co')?.textContent.trim()||'',
+      role:  row.querySelector('.exp-role')?.textContent.trim()||'',
+      detail:row.querySelector('.exp-detail')?.textContent.trim()||'',
+      works: [...row.querySelectorAll('.exp-work')].map(w=>w.textContent.trim()).join(', '),
+    })),
+    education:[0,1].map(i=>({ year:$t(`edu-${i}-year`),name:$t(`edu-${i}-name`),degree:$t(`edu-${i}-degree`) })),
+    certs:[0,1,2,3].map(i=>({ name:$t(`cert-${i}-name`),issuer:$t(`cert-${i}-issuer`) })),
+  };
+}
+
+/* ── Restore state → page ───────────────────── */
+function edRestore(st){
+  if(!st)return;
+  if(st.fn)$st('f-firstname',st.fn);
+  if(st.ln)$st('f-lastname',st.ln);
+  if(st.role)$st('f-role',st.role);
+  if(st.quote)$st('f-quote','"'+st.quote+'"');
+  if(st.bio)$st('f-bio',st.bio);
+  if(st.email){ $st('f-email',st.email); const a=document.getElementById('f-email-a'); if(a)a.href='mailto:'+st.email; }
+  if(st.phone){ $st('f-phone',st.phone); const a=document.getElementById('f-phone-a'); if(a)a.href='tel:'+st.phone.replace(/\D/g,''); }
+  if(st.location)$st('f-location','📍 '+st.location);
+  if(st.pills){ const p=document.getElementById('f-pills'); if(p)p.innerHTML=st.pills.split(',').map(t=>`<span class="pill">${t.trim()}</span>`).join(''); }
+  [['s1n','s1l'],['s2n','s2l'],['s3n','s3l'],['s4n','s4l']].forEach(([n,l])=>{
+    if(st[n])$st(n,st[n]); if(st[l])$st(l,st[l]);
+  });
+  if(st.projects) st.projects.forEach(p=>{
+    const card=document.getElementById('pcard-'+p.pid); if(!card)return;
+    if(p.year){ const e=card.querySelector(`[data-field="${p.pid}-year"]`); if(e)e.textContent=p.year; }
+    if(p.name){ const e=card.querySelector(`[data-field="${p.pid}-name"]`); if(e)e.textContent=p.name; }
+    if(p.desc){ const e=card.querySelector(`[data-field="${p.pid}-desc"]`); if(e)e.textContent=p.desc; }
+    if(p.tags){ const c=card.querySelector(`[data-field="${p.pid}-tags"]`); if(c)c.innerHTML=p.tags.split(',').map(t=>`<span class="ptag">${t.trim()}</span>`).join(''); }
+    if(p.bullets&&p.bullets.length){ const ul=document.getElementById('bullets-'+p.pid); if(ul)ul.innerHTML=p.bullets.map(b=>`<li>${b}</li>`).join(''); }
+  });
+  if(st.experience) st.experience.forEach((e,i)=>{
+    const row=document.querySelectorAll('.exp-row')[i]; if(!row)return;
+    if(e.years)$qs(row,'.exp-years',e.years);
+    if(e.co)   $qs(row,'.exp-co',e.co);
+    if(e.role) $qs(row,'.exp-role',e.role);
+    if(e.detail)$qs(row,'.exp-detail',e.detail);
+    if(e.works){
+      let wc=row.querySelector('.exp-works');
+      if(!wc){ wc=document.createElement('div'); wc.className='exp-works'; row.lastElementChild.appendChild(wc); }
+      wc.innerHTML=e.works.split(',').map(w=>w.trim()).filter(Boolean).map(w=>`<span class="exp-work">${w}</span>`).join('');
+    }
+  });
+  if(st.education) st.education.forEach((e,i)=>{
+    if(e.year)  $st(`edu-${i}-year`,e.year);
+    if(e.name)  $st(`edu-${i}-name`,e.name);
+    if(e.degree)$st(`edu-${i}-degree`,e.degree);
+  });
+  if(st.certs) st.certs.forEach((c,i)=>{
+    if(c.name)  $st(`cert-${i}-name`,c.name);
+    if(c.issuer)$st(`cert-${i}-issuer`,c.issuer);
+  });
+  sortProjects();
+}
+
+/* ── Save local ──────────────────────────────── */
+function edSaveLocal(){
+  edApply();
+  localStorage.setItem(SK, JSON.stringify(edCollect()));
+  edToast('✓ Guardado en este equipo','green');
+}
+
+/* ── Export ──────────────────────────────────── */
+function edExport(){
+  edApply();
+  localStorage.setItem(SK, JSON.stringify(edCollect()));
+  const clone=document.documentElement.cloneNode(true);
+  clone.querySelector('#ed-btn')?.remove();
+  clone.querySelector('#ed-panel')?.remove();
+  clone.querySelector('#ep-toast')?.remove();
+  clone.querySelectorAll('.pcard-body').forEach(b=>{ b.style.display=''; b.classList.remove('open'); });
+  const blob=new Blob(['<!DOCTYPE html>\n'+clone.outerHTML],{type:'text/html;charset=utf-8'});
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(blob); a.download='jacqueline-monaco-portfolio.html'; a.click();
+  edToast('✓ HTML exportado — listo para enviar','amber');
+}
+
+/* ── Toggle panel ────────────────────────────── */
+function edToggle(){
+  const panel=document.getElementById('ed-panel');
+  const btn  =document.getElementById('ed-btn');
+  if(!panel||!btn)return;
+  const open=panel.classList.toggle('on');
+  btn.classList.toggle('on',open);
+  if(open){ edFillForm(); edBuildProjects(); edBuildExp(); }
+}
+
+/* ── Switch tab ──────────────────────────────── */
+function edTab(id,btn){
+  document.querySelectorAll('.ep-tab').forEach(t=>t.classList.remove('on'));
+  document.querySelectorAll('.ep-pane').forEach(p=>p.classList.remove('on'));
+  document.getElementById('ep-'+id)?.classList.add('on');
+  btn.classList.add('on');
+  if(id==='proyectos')edBuildProjects();
+  if(id==='exp')edBuildExp();
+}
+
+/* ── Toast ───────────────────────────────────── */
+function edToast(msg,cls){
+  const t=document.getElementById('ep-toast');
+  if(!t)return;
+  t.textContent=msg; t.className='ep-toast on '+cls;
+  setTimeout(()=>t.classList.remove('on'),3000);
+}
+
+/* ── Editor sólo con ?edit=1 ─────────────────── */
+if(new URLSearchParams(location.search).has('edit')){
+  ['ed-btn','ed-panel','ep-toast'].forEach(id=>document.getElementById(id)?.removeAttribute('hidden'));
+}
+
+/* ── Boot ────────────────────────────────────── */
+window.addEventListener('DOMContentLoaded',()=>{
+  const saved=localStorage.getItem(SK);
+  if(saved){ try{ edRestore(JSON.parse(saved)); }catch(e){ console.warn('Editor restore failed',e); } }
+});
+</script>
+
+</body></html>
