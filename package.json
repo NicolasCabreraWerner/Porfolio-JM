@@ -1,0 +1,13 @@
+{
+  "name": "portfolio-jm",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfolio web de Jacqueline Monaco - arquitectura e interiorismo",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
